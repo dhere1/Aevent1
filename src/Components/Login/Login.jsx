@@ -29,7 +29,7 @@ const handleConfirmPassword=(e)=>{
 
     return(
         <div style={{height:"100vh", display:"flex", alignItems:"center", justifyContent:"center"}}>
-            <Card title="Signup" styles={{header:{background:"#1574EF", color:"white"}}} style={{width:"500px"}}>
+            <Card title="LogIn" styles={{header:{background:"#1574EF", color:"white"}}} style={{width:"500px"}}>
                 <p style={{marginBottom:"5px"}}>Email</p>
                 <Input placeholder="Email"/>
 

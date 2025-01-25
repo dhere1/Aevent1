@@ -1,17 +1,16 @@
 import React from 'react'
 import './Card.css'
-import oip from '../../Assets/OIP.jpeg'
-const Card = () => {
+// import oip from '../../Assets/OIP.jpeg'
+const Card = (props) => {
   return (
-    <>
+    
     <div className='event-card'>
-        <img src={oip} alt="firstimg" className='event-card-img' />
-        <h1 className='event-card-title'>iTMeet</h1>
-        <p className='event-card-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores, deleniti quis omnis quasi aspernatur placeat nostrum porro doloremque ex. Sunt placeat perspiciatis possimus, numquam ducimus ipsum earum id eligendi!</p>
-        
+        <img src={props.img} alt="firstimg" className='event-card-img' />
+        <h1 className='event-card-title'>{props.eventName}</h1>
+        <p className='event-card-para'>{props.aboutEvent}</p>
+        <button className='learn-more'>Learn More</button>
     </div>
-    <button className='learn-more'>Learn More</button>
-    </>
+    
   )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
 import Navbar from '../Navbar' 
+import './Home.css'
 //Import Images
 import img1 from '../../Assets/streamline.jpg'
-import security from '../../Assets/cybersecurity.png'
+import security from '../../Assets/cyber-security.png'
+import dashboard from '../../Assets/dashboard.png'
+import bell from '../../Assets/bell.png'
+import equalizer from '../../Assets/equalizer.png'
 const Home = () => {
   return (
     <div className="home-container">
@@ -33,19 +37,19 @@ const Home = () => {
           </div>
           
           <div className="feature-item">
-            <img src="path-to-analytics-icon.png" alt="Real-time Analytics" />
+            <img src={dashboard} alt="Real-time Analytics" />
             <h3>Real-time Analytics</h3>
             <p>Track your event's performance with our real-time analytics dashboard.</p>
           </div>
          
           <div className="feature-item">
-            <img src="path-to-reminders-icon.png" alt="Automated Reminders" />
+            <img src={bell} alt="Automated Reminders" />
             <h3>Automated Reminders</h3>
             <p>Send automated reminders and notifications to your attendees.</p>
           </div>
           
           <div className="feature-item">
-            <img src="path-to-customized-events-icon.png" alt="Customized Events" />
+            <img src={equalizer} alt="Customized Events" />
             <h3>Customized Events</h3>
             <p>Get your events customized according to your needs and preferences.</p>
           </div>

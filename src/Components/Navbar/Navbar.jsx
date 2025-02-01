@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../Assets/Aevent.png'
+import './Navbar.css'
+import Logo from '../../Assets/logo.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
       <a href="/event">Events</a>
       <a href="/notification">Notification</a>
       <a href="/about">About Us</a>
-      <a href="/contact">Contact</a>
+      <a href="/contact">Contact Us</a>
     </nav>
     <div className='button-container'>
     <Link to="/login">

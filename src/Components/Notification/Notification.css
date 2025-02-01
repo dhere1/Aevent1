@@ -1,0 +1,135 @@
+.notification-container {
+    min-height: calc(100vh - 64px); /* Subtract navbar height */
+  width: 100%;
+  max-width: none;
+  margin: 64px 0 0 0; /* Top margin for navbar */
+  padding: 30px;
+  background-color: #E2E0B5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+  
+  .notification-header {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .notification-header h2 {
+    font-size: 2.5rem;
+    font-family: 'montserrat';
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  .notification-filters {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filter-btn.active {
+    background: #1A289F;
+    color: white;
+    border-color: #1A289F;
+  }
+  
+  .preferences-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  .preference-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .preference-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .notification-list {
+    flex: 1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .notification-item.unread {
+    background-color: #f0f7ff;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-message {
+    margin: 0;
+    color: #333;
+  }
+  
+  .notification-timestamp {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .unread-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .notification-item.personal {
+    border-left: 4px solid #0d6efd;
+  }
+  
+  .notification-item.event {
+    border-left: 4px solid #198754;
+  }
+  
+  .notification-item.system {
+    border-left: 4px solid #dc3545;
+  }
+  
+  .no-notifications {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+  }

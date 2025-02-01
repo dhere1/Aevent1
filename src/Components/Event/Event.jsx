@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
 import './Event.css'
 import Card from '../Cards/Card'
 import machine from '../../Assets/machinelearning.jpg'

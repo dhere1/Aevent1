@@ -1,12 +1,13 @@
-import { useState, } from "react"
-import { useNavigate } from "react-router-dom"
-import { Card, Button, Input, DatePicker } from "antd"
+import { useState, } from "react";
+import { useNavigate } from "react-router-dom";
+import { Card, Button, Input, DatePicker } from "antd";
+import { loginUser } from "../../Utils/ClientApi";
 
 const Login=()=>{
-const navigate=useNavigate()
- const [error, setError]=useState("")
-const [password, setPassword]= useState("")
-const [confirmPassword, setConfirmPassword]=useState("")
+const navigate=useNavigate();
+ const [error, setError]=useState("");
+const [password, setPassword]= useState("");
+const [confirmPassword, setConfirmPassword]=useState("");
 const Check=()=>{
     if (password.length<6){
         setError("Length of password must be greater than 6")

@@ -7,7 +7,8 @@ import { Avatar, Dropdown } from "antd";
 const Navbar = () => {
   const user = localStorage.getItem("user") && JSON.parse(localStorage.getItem("user"));
   const name = user?.name;
-  const userName = (name?.split(" ")[0][0] + (name?.split(" ")?.[1]?.[0] ?? "")).toUpperCase();
+  const userName = (
+    (name?.split(" ")[0][0]?? "") + (name?.split(" ")?.[1]?.[0] ?? "")).toUpperCase();
 
   const handleLogout = () => {
     localStorage.clear();
